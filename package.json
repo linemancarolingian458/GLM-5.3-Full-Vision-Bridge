@@ -1,0 +1,14 @@
+{
+  "name": "vision-proxy",
+  "private": true,
+  "description": "Gives a text-only chat model images-as-text: captions image_url parts with a local vision model, then forwards to the real server.",
+  "type": "module",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/main.ts",
+    "live-check": "node scripts/live-check.ts"
+  }
+}

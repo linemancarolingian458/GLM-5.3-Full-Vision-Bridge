@@ -1,0 +1,26 @@
+# systemd user service for vision-proxy (Linux).
+#
+#   cp deploy/vision-proxy.service ~/.config/systemd/user/
+#   # edit the Environment= lines, and the node/repo paths if yours differ
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now vision-proxy
+#   journalctl --user -u vision-proxy -f          # follow the log
+#
+# To keep it running while you're logged out: loginctl enable-linger "$USER"
+
+[Unit]
+Description=vision-proxy: image descriptions for a text-only chat model
+After=network-online.target
+
+[Service]
+# Node 23.6+ (check with: command -v node). %h is your home directory.
+ExecStart=/usr/bin/node %h/vision-proxy/src/main.ts
+WorkingDirectory=%h/vision-proxy
+Environment=VP_UPSTREAM=http://127.0.0.1:8000
+#Environment=VP_OLLAMA=http://127.0.0.1:11434
+#Environment=VP_MODEL=qwen2.5vl:7b
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,30 @@
+<html><body style="margin:0;background:#1e1e1e;font-family:Menlo,monospace;width:1600px;height:900px">
+<div style="background:#323233;color:#ccc;padding:8px 14px;font:13px -apple-system">zsh — ~/projects/orbit-api — 120×40</div>
+<pre style="color:#d4d4d4;font-size:15px;padding:14px;margin:0;line-height:1.45">
+<span style="color:#6a9955">$</span> pnpm build
+&gt; orbit-api@2.7.1 build /Users/dev/projects/orbit-api
+&gt; tsc -p tsconfig.build.json
+
+<span style="color:#f14c4c">src/server/router.ts:142:17 - error TS2345:</span> Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+142     registerRoute(config.basePath, handler);
+                      <span style="color:#f14c4c">~~~~~~~~~~~~~~~</span>
+
+<span style="color:#f14c4c">src/db/pool.ts:58:3 - error TS2322:</span> Type 'number | null' is not assignable to type 'number'.
+
+58   maxConnections: env.DB_POOL_MAX,
+     <span style="color:#f14c4c">~~~~~~~~~~~~~~</span>
+
+Found 2 errors in 2 files.
+
+Errors  Files
+     1  src/server/router.ts<span style="color:#888">:142</span>
+     1  src/db/pool.ts<span style="color:#888">:58</span>
+<span style="color:#f14c4c"> ELIFECYCLE </span> Command failed with exit code 2.
+</pre>
+<div style="position:absolute;left:1020px;top:520px;width:460px;background:#f6f6f6;border-radius:10px;box-shadow:0 8px 30px #000;font:14px -apple-system;color:#222">
+<div style="background:#d93025;color:#fff;padding:10px 16px;border-radius:10px 10px 0 0;font-weight:600">⚠ Deployment failed</div>
+<div style="padding:14px 16px">Health check on port 18091 timed out after 30s.<br>Release <b>v2.7.1-rc.3</b> was rolled back.</div>
+<div style="padding:0 16px 14px;text-align:right"><span style="background:#ddd;padding:6px 14px;border-radius:6px;margin-right:8px">View logs</span><span style="background:#1a73e8;color:#fff;padding:6px 14px;border-radius:6px">Retry</span></div>
+</div></body></html>
