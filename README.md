@@ -19,6 +19,13 @@ client (e.g. ZCode) ──► vision-proxy :11435 ──► your chat server (Op
 Requests without images pass through byte-for-byte, so the proxy can stay in front of your
 model all the time.
 
+![A text-only GLM-5.3 in ZCode describing a pasted image through vision-proxy](docs/zcode-demo.png)
+
+*A text-only GLM-5.3 in ZCode answering a question about a pasted image, through vision-proxy.
+The pasted image is the artwork "velvet diva" by **Ramin Nasibov** (@RaminNasibov on X), shown
+here with credit to the artist. The answer below it is the model's own output. The model ID in
+the picker is covered.*
+
 ## What you need
 
 - **Node.js 23.6 or newer.** The proxy runs its TypeScript directly: no build step, no dependencies.
